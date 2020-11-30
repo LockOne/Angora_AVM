@@ -71,16 +71,16 @@ pub const COND_FCMP_UNE: u32 = 14;
 pub const COND_FCMP_TRUE: u32 = 15;
 ///< 1 1 1 1    Always true (always folded)
 
-pub const COND_ICMP_EQ_OP: u32 = 32;
-pub const COND_ICMP_NE_OP: u32 = 33;
-pub const COND_ICMP_UGT_OP: u32 = 34;
-pub const COND_ICMP_UGE_OP: u32 = 35;
-pub const COND_ICMP_ULT_OP: u32 = 36;
-pub const COND_ICMP_ULE_OP: u32 = 37;
-pub const COND_ICMP_SGT_OP: u32 = 38;
-pub const COND_ICMP_SGE_OP: u32 = 39;
-pub const COND_ICMP_SLT_OP: u32 = 40;
-pub const COND_ICMP_SLE_OP: u32 = 41;
+pub const COND_ICMP_EQ_OP: u32 = 32; ///< equal
+pub const COND_ICMP_NE_OP: u32 = 33; ///< not equal
+pub const COND_ICMP_UGT_OP: u32 = 34; ///< unsigned greater than
+pub const COND_ICMP_UGE_OP: u32 = 35; ///< unsigned greater or equal
+pub const COND_ICMP_ULT_OP: u32 = 36; ///< unsigned less than
+pub const COND_ICMP_ULE_OP: u32 = 37; ///< unsigned less or equal
+pub const COND_ICMP_SGT_OP: u32 = 38; ///< signed greater than
+pub const COND_ICMP_SGE_OP: u32 = 39; ///< signed greater or equal
+pub const COND_ICMP_SLT_OP: u32 = 40; ///< signed less than
+pub const COND_ICMP_SLE_OP: u32 = 41; ///< signed less or equal
 pub const COND_SW_OP: u32 = 0x00FF;
 
 pub const COND_BASIC_MASK: u32 = 0xFF;

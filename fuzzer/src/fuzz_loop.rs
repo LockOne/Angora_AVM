@@ -15,7 +15,9 @@ pub fn fuzz_loop(
     global_branches: Arc<GlobalBranches>,
     global_stats: Arc<RwLock<stats::ChartStats>>,
 ) {
-    let search_method = cmd_opt.search_method;
+    //let search_method = cmd_opt.search_method;
+    //let's make it simple...
+    let search_method = SearchMethod::Avm;
     let mut executor = Executor::new(
         cmd_opt,
         global_branches,
@@ -90,6 +92,9 @@ pub fn fuzz_loop(
                             },
                             SearchMethod::Mb => {
                                 MbSearch::new(handler).run();
+                            },
+                            SearchMethod::Avm => {
+                                AvmSearch::new(handler).run(&mut thread_rng());
                             },
                         }
                     }
